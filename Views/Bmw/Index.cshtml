@@ -1,0 +1,42 @@
+﻿@model List<OmerFarukIrmakProject.Models.CarPrice>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="color:cadetblue;margin-left:50px;">BMW M Power</h1>
+
+@foreach (var car in Model)
+{
+    <div style="display: flex; flex-wrap: nowrap">
+        <img style="height: 300px; width: 450px;" src="~/Images/pngwing.com (1).png" />
+        <div style="margin-right:15px;font-size:1em;color:darkgray">
+            Car Price:
+        </div>
+
+        <div style="margin-right:25px;font-size:1em;color:darkgray">
+            @car.CarsPrice
+
+        </div>
+        <span style="margin-right:auto;">||</span>
+        <div style="margin-right:15px;font-size:1em;color:darkgray">
+            Car Model:
+        </div>
+
+        <div style="margin-right:25px;font-size:1em;color:darkgray">
+            @car.CarsModel
+
+        </div>
+        <span style="margin-right:auto;">||</span>
+        <div style="margin-right:15px;font-size:1em;color:darkgray">
+            Car Make:
+        </div>
+
+        <div style="margin-right:25px;font-size:1em;color:darkgray">
+            @car.CarsMade
+
+        </div>
+
+    </div>
+}
+

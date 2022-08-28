@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <title>Cars Price</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+body {
+background-color: darkslategrey;
+font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+header {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 10px;
+}
+
+        img {
+            height: 80px;
+            width: 80px;
+            cursor: pointer;
+            margin-right: auto;
+            
+        }
+
+li,
+a {
+text-decoration: none;
+color: whitesmoke;
+}
+
+.nav__links {
+list-style: none;
+}
+
+.nav__links li {
+padding: 0 20px;
+display: inline-block;
+}
+
+        .nav__links li a {
+            transition: all 0.3s ease .1s;
+        }
+
+.nav__links li a:hover {
+ color: #0088a9;
+ 
+
+}
+    </style>
+</head>
+<body>
+    <header>
+      <a href="~/Home/Index"><img src="~/Images/logo_transparent.png"></a>        
+        <nav>
+            <ul class="nav__links">
+                <li><a href="~/Bmw/Index">Bmw</a></li>
+                <li><a href="~/Mercedes/Index">Mercedes</a></li>
+                <li><a href="~/Audi/Index">Audi</a></li>
+                <li><a href="~/Lamborghini/Index">Lamborghini</a></li>
+                <li><a href="~/Ferrari/Index">Ferrari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

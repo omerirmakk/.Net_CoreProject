@@ -1,0 +1,102 @@
+﻿
+@{
+}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+    <title>Car Price</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: darkslategrey;
+            background-image: url(Images/2010-car.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: hard-light;
+            font-family: "IBM Plex Sans Arabic", sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo__image {
+            height: 80px;
+            width: 80px;
+            cursor: pointer;
+            margin-right: auto;
+        }
+
+        li,
+        a
+         {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .nav__links {
+            list-style: none;
+        }
+
+            .nav__links li {
+                padding: 0 20px;
+                display: inline-block;
+            }
+
+                .nav__links li a {
+                    transition: all 0.3s ease .1s;
+                }
+
+                    .nav__links li a:hover {
+                        color: #0088a9;
+                        
+                    }
+                    .header__first__title{
+                        position:absolute;
+                        color:darkorange;
+                        top:40%;
+                        left:50px;
+                        transform:translateY(-40%);
+                        text-align:center;
+                        padding-left:25px;
+                    }
+                    .header__first__parag{
+                        position:absolute;
+                        font-size:1em;
+                        color:burlywood;
+                        top:50%;
+                        left:200px;
+                        transform:translateY(-50%);
+                        text-align:left;
+                    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="~/Home/Index"><img class="logo__image" src="~/Images/logo_transparent.png"/></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="~/Bmw/Index">Bmw</a></li>
+                <li><a href="~/Mercedes/Index">Mercedes</a></li>
+                <li><a href="~/Audi/Index">Audi</a></li>
+                <li><a href="~/Lamborghini/Index">Lamborghini</a></li>
+                <li><a href="~/Ferrari/Index">Ferrari</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="header__first__title">
+        Araba modelleri ve fiyat bilgileri sizlerle...
+    </h1>
+        <p class="header__first__parag">Hayalindeki araba bir tık uzakta</p>
+    
+
+</body>
+

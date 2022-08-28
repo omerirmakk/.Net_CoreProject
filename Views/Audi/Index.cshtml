@@ -1,0 +1,20 @@
+﻿@model List<OmerFarukIrmakProject.Models.CarName>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="color:cadetblue;margin-left:50px;">Audi Handling</h1>
+
+@foreach (var car in Model)
+{
+    <div>
+
+        <img style="width:400px;height:200px;float:left;" src="~/Images/pngegg (1).png" />
+    </div>
+    <div style="font-size: 2em; color: darkgray; text-align: center;">
+        @car.CarsName
+        <hr />
+    </div>
+}
+
